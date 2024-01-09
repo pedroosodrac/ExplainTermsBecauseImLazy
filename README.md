@@ -1,25 +1,29 @@
-<h1> Explain Terms Because Im Lazy <h2>
+<h1> Explain Terms Because Im Lazy </h2>
 
 
-<h2> Introduction <h4>
+<h2> Introduction </h4>
 
 Tame the legalese beast with this Python script! Powered by OpenAI's GPT, it expertly condenses even the most extensive terms and conditions into concise, user-friendly summaries. Ideal for the time-pressed, the efficiency-minded, and those who simply prefer to skip the legalese, this tool empowers you to grasp key points quickly and accurately. Reclaim your time, embrace understanding, and procrastinate with confidence – clarity is just a click away.
 
-<h2> How It Works <h4>
+<h2> Why not just use ChatGPT? </h4>
+
+Although ChatGPT is a powerful tool, this project offers several distinct advantages. The first is that it automates the process of segmenting and simplifying texts, saving time and effort on manual interaction and eliminating the need to create and refine prompts from scratch. It also has no text size limit, which means it can handle infinitely larger documents than ChatGPT. Importantly, it ensures accurate summaries, something ChatGPT sometimes struggles with when it wrongly preserves or ignores information. Furthermore, this code is extremely adaptable and serves as a basis for other projects that involve processing long texts, extending its usefulness beyond simplifying terms and conditions.
+
+<h2> How It Works </h4>
 
 The script offers a user-friendly interface, requiring only your OpenAI key and the text you want to simplify. With a single function call, it automates the entire process:
 
-Text Extraction: Seamlessly extracts content from the designated text file.
+**Text Extraction**: Seamlessly extracts content from the designated text file.
 
-Intelligent Segmentation: Divides the text into logical sections for focused summarization.
+**Intelligent Segmentation**: Divides the text into logical sections for focused summarization.
 
-GPT-Powered Summarization: Utilizes OpenAI's GPT model and tailored prompts to generate concise and accurate summaries.
+**GPT-Powered Summarization**: Utilizes OpenAI's GPT model and tailored prompts to generate concise and accurate summaries.
 
-Terms and Conditions Mastery: Expertly handles terms and conditions documents, crafting comprehensive yet digestible summaries.
+**Terms and Conditions Mastery**: Expertly handles terms and conditions documents, crafting comprehensive yet digestible summaries.
 
-Length Management: Ensures clarity by shortening summaries that exceed 800 characters.
+**Length Management**: Ensures clarity by shortening summaries that exceed 800 characters.
 
-<h2> Application <h4>
+<h2> Application </h4>
 
 In the [terms-and-conditions](terms-and-conditions) folder there are two real [Google](https://policies.google.com/terms/archive?hl=en-US) examples ready to use in txt format. Both were chosen because they are from different dates and present considerably different content. Applying the code in the file [January_5_2022.txt](terms-and-conditions/January_5_2022.txt) the result was the following:
 
@@ -31,6 +35,6 @@ Applying the code in the file [September_20_1999.txt](terms-and-conditions/Septe
 
 Having cloned this repository, to use it you just need to add your OpenAI key to the [.env](.env) file and use the [main.py](src/main.py) file to simplify any terms and conditions you want.
 
-<h2> GPT Model Choice <h4>
+<h2> GPT Model Choice </h4>
 
 Both GPT-3.5 and GPT-4 produce similar results. However, although GPT-3.5 is cheaper, GPT-4 more accurately summarizes the text. Each generated code costs less than a tenth of a dollar and is produced in less than 1 minute. To save money, a free alternative would be to use the prompts from the [etbil.py](src/etbil.py) file in ChatGPT. However, this method requires manual intervention and is not automatic.
